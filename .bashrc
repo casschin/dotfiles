@@ -46,6 +46,12 @@ PAGER=less;  	export PAGER # git diff expects 'less' for best output
 PATH=$PATH:$HOME/bin:/usr/local/sbin
 
 ##############################################################################
+# python
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+source /usr/local/bin/virtualenvwrapper.sh
+
+##############################################################################
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
