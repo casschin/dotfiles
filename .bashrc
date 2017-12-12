@@ -3,7 +3,7 @@
 
 # Using this, consecutive duplicate commands, invocations
 # of ls, plus calls to the bg, fg and exit
-# built-ins will not be appended to the history list. 
+# built-ins will not be appended to the history list.
 HISTIGNORE="&:ls:ls *:[bf]g:exit:vi"
 export HISTIGNORE
 
@@ -14,7 +14,7 @@ function parse_git_dirty {
 }
 function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/ [\1$(parse_git_dirty)]/"
-} 
+}
 
 if [ -f ~/.config/.git-completion.bash ]; then
 		. ~/.config/.git-completion.bash
@@ -34,6 +34,8 @@ alias ll='ls -alFG'
 alias rm='rm -i'
 alias .='pwd'
 alias ..='cd ..'
+alias simulator='open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
+
 
 # force grep into color mode; short alias for recursive grep
 export GREP_OPTIONS='--color=auto' GREP_COLOR='1;32'
