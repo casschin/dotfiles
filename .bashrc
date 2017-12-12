@@ -37,10 +37,6 @@ alias ..='cd ..'
 alias simulator='open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
 
 
-# force grep into color mode; short alias for recursive grep
-export GREP_OPTIONS='--color=auto' GREP_COLOR='1;32'
-function gr() { grep -nr $@ *; }
-
 ##############################################################################
 # defaults
 EDITOR=vi;   	export EDITOR
@@ -63,3 +59,7 @@ source $NVM_DIR/nvm.sh
 export PATH="$HOME/.yarn/bin:$PATH"
 
 ssh-add
+
+export PATH="/home/cass/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
