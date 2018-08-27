@@ -36,6 +36,9 @@ alias .='pwd'
 alias ..='cd ..'
 alias simulator='open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
 
+##############################################################################
+# funk
+function killtest { kill -9 $(lsof -i tcp:5000) }
 
 ##############################################################################
 # defaults
