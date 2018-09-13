@@ -23,7 +23,7 @@ fi
 ##############################################################################
 # two-line ps1
 # $
-PS1='\[\033[01;37m\](\u@\h \w)$(parse_git_branch)\n$ \[\033[00m\]' # white, rounded, git status
+PS1='\[\033[01;37m\]\w$(parse_git_branch)\n$ \[\033[00m\]'
 
 ##############################################################################
 # aliases
@@ -38,7 +38,7 @@ alias simulator='open /Applications/Xcode.app/Contents/Developer/Applications/Si
 
 ##############################################################################
 # funk
-function killtest { kill -9 $(lsof -i tcp:5000) }
+# function killtest { kill -9 $(lsof -i tcp:5000) }
 
 ##############################################################################
 # defaults
