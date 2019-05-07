@@ -36,6 +36,10 @@ alias .='pwd'
 alias ..='cd ..'
 alias simulator='open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
 
+alias weather='curl -4 http://wttr.in/nyc'
+alias ebash='vim ~/.bash_profile'
+alias rbash='source ~/.bash_profile'
+
 ##############################################################################
 # defaults
 EDITOR=vi;   	export EDITOR
