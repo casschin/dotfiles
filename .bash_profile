@@ -56,4 +56,4 @@ source $NVM_DIR/nvm.sh
 export PATH="$HOME/.yarn/bin:$PATH"
 
 ssh-add
-
+cd ~
