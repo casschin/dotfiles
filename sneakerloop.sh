@@ -7,7 +7,7 @@ dir=~/dotfiles
 olddir=~/dotfiles_old
 
 # list of files/folders to symlink in homedir
-files=".gitconfig .bash_profile .gitexcludes .profile .vimrc"
+files=".gitconfig .bash_profile .gitexcludes .profile .vimrc .config/nvim/init.vim"
 
 ##########
 
@@ -20,6 +20,10 @@ echo "...done"
 echo "Changing to the $dir directory"
 cd $dir
 echo "...done"
+
+if [ ! -d ~/.config/nvim ]; then
+  mkdir ~/.config/nvim
+fi
 
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks 
 for file in $files; do
