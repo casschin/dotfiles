@@ -1,52 +1,12 @@
-" :W sudo saves the file when the file is open in readonly mode
-command W w !sudo tee % > /dev/null
-
-""""""""""""""""""""""""""""""""""""
-" Line
-""""""""""""""""""""""""""""""""""""
-" show line numbers
-set number
-
-"""""""""""""""""""""""""""""""""""""
-" Indents
-"""""""""""""""""""""""""""""""""""""
-" replace tabs with spaces
-set expandtab
-" 1 tab = 2 spaces
-set tabstop=2 shiftwidth=2
-
-" when deleting whitespace at the beginning of a line, delete 
-" 1 tab worth of spaces (for us this is 2 spaces)
-set smarttab
-
-" when creating a new line, copy the indentation from the line above
-set autoindent
+syntax on
 set smartindent
+set shiftwidth=2 " number of spaces when shift indenting
+set tabstop=2 " number of visual spaces per tab
+set softtabstop=2 " number of spaces in tab when editing
+set expandtab " tab to spaces
+set number " show line numbers
+set cursorline  " highlight current line
+set showmatch " highlight matching [{()}]
+set incsearch " search as characters are entered
+set hlsearch " highlight matches
 
-"""""""""""""""""""""""""""""""""""""
-" Search
-"""""""""""""""""""""""""""""""""""""
-" Ignore case when searching
-set ignorecase
-set smartcase
-
-" highlight search results (after pressing Enter)
-set hlsearch
-
-" highlight all pattern matches WHILE typing the pattern
-set incsearch
-
-"""""""""""""""""""""""""""""""""""""
-" Mix
-"""""""""""""""""""""""""""""""""""""
-" show the mathing brackets
-set showmatch
-
-" highlight current line
-set cursorline
-
-set noerrorbells
-set nowrap
-set noswapfile
-set colorcolumn=80
-highlight ColorColumn ctermbg=2 guibg=darkgrey
