@@ -7,7 +7,7 @@ dir=~/dotfiles
 olddir=~/dotfiles_old
 
 # list of files/folders to symlink in homedir
-files=".gitconfig .bash_profile .gitexcludes .profile .vimrc .config/nvim/init.vim .zshrc .zshenv"
+files=".gitconfig .bash_profile .gitexcludes .profile .vimrc .config/nvim/init.vim .zshrc .zshenv .workrc"
 
 ##########
 
